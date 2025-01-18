@@ -6,10 +6,10 @@ const galleryMap = images
   .map(
     ({ preview, original, description }) =>
       `<li class="gallery-item">
-  <a class="gallery-link" href="${original}">
+  <a class="gallery-link" href="${original.slice(1, -1)}">
     <img
       class="gallery-image"
-      src="${preview}"
+      src="${preview.slice(1, -1)}"
       alt="${description}"
     />
   </a>
