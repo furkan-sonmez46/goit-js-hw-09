@@ -1,4 +1,11 @@
+import import "../js/init";
+
 import { images } from '../data/images.js';
+// Kullanılacak kısmın import edilmesi
+import SimpleLightbox from "simplelightbox";
+// Ek stillerin eklenmesi
+import "simplelightbox/dist/simple-lightbox.min.css";
+
 
 const gallery = document.querySelector('.gallery');
 
@@ -19,3 +26,5 @@ const galleryMap = images
   .join('');
 
 gallery.innerHTML = galleryMap;
+
+new SimpleLightbox('.gallery a');
