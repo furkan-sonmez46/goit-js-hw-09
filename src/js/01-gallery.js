@@ -1,4 +1,4 @@
-import import "../js/init";
+import "../js/init";
 
 import { images } from '../data/images.js';
 // Kullanılacak kısmın import edilmesi
