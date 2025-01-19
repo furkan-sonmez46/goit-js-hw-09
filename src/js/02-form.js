@@ -7,6 +7,7 @@ function savedFormItem(event) {
         email: form.elements.email.value.trim(),
         message: form.elements.message.value.trim(),
     };
+    console.log({formList});
     const transformedList = JSON.stringify(formList);
     localStorage.setItem(FORM_DATA, transformedList);
 };
