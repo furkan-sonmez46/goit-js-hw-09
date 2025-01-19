@@ -27,4 +27,7 @@ const galleryMap = images
 
 gallery.innerHTML = galleryMap;
 
-new SimpleLightbox('.gallery a');
+new SimpleLightbox('.gallery a', {
+    captionsData: "alt",
+    captionDelay: 250,
+});
